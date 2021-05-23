@@ -12,6 +12,10 @@ jobs:
 
       - name: call ls -a
         run: ls -a
+
+      - name: echo
+        run: echo Hallo
+
       - name: Setup
         run: npm ci
 
