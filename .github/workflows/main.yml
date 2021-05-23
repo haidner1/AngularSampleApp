@@ -10,9 +10,13 @@ jobs:
         with:
           node-version: 14.x
 
+      - uses: browser-actions/setup-chrome@latest
+      - name Insall chrome
+      - run: chrome --version
+
       - name: Setup
         run: npm ci
 
       - name: Test
         run: |
-          npm test -- --no-watch --no-progress
+          npm test -- --no-watch --no-progress  --browsers=ChromeHeadlessCI
