@@ -10,9 +10,8 @@ jobs:
         with:
           node-version: 14.x
 
-      - uses: browser-actions/setup-chrome@latest
-      - name Insall chrome
-      - run: chrome --version
+      - name: install chrome
+        run: npm install -g chrome
 
       - name: Setup
         run: npm ci
