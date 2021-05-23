@@ -10,9 +10,8 @@ jobs:
         with:
           node-version: 14.x
 
-      - name: install chrome
-        run: npm install -g chrome
-
+      - name: call ls -a
+        run: ls -a
       - name: Setup
         run: npm ci
 
